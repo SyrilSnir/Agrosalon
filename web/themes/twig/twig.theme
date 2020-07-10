@@ -1,0 +1,7 @@
+<?php 
+    function twig_preprocess_html(array &$variables) 
+    {
+     //   kint($variables['attributes']);
+        $variables['attributes']['class'][] = 'twig';
+    }
+?>

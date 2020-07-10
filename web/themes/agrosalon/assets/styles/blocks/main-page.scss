@@ -1,0 +1,71 @@
+@import 'mixins';
+.main-information  {
+    h2 {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #000;
+    }
+    
+}
+.main-page {
+    section > h2 {
+        position: relative;
+        padding-left: 20px;  
+        &::before {     
+            @include titleDecoration();
+        }
+    }
+    .main__news {
+        h2 {
+            font-size: 12px;
+        }
+        .content {
+            font-size: 10px;
+        }
+        ul.blazy {
+            display: flex;
+            li {
+                display: flex;
+                flex-direction: column;
+                .grid__content {
+                    display: flex;
+                    flex-grow: 1;
+                    article {
+                        padding-left: 20px;
+                        display:flex;
+                        flex-grow: 1;
+                        flex-direction: column;
+                        padding-bottom: 2em;
+                        .links {
+                            position: absolute;
+                            bottom: 2px;
+                            right: 25px;
+                            a {
+                                color: #000;
+                                &::after {
+                                    font-family: FontAwesome;
+                                    content: "\f105";
+                                    font-size: 20px;
+                                    line-height: 20px;
+                                    position: absolute;
+                                    margin: 0 0 0 7px;
+                                    font-style: normal;
+                                    bottom: -2px;
+                                    color: $agrosalonDefaultColor;
+                                }
+                            }
+                        }                    
+                    }
+                }
+                
+            }
+        }
+        h2 {
+            a {
+                color: #000;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

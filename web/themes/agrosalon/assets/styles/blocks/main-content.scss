@@ -1,0 +1,31 @@
+.main-content-wrapper {
+    color: $mainPageColor;
+    @include row-flex;
+    margin-right: 0px;
+    padding-right: 15px;
+    background-color: #fff; 
+    .main-content {
+        h2 {
+            font-size: 16px;
+        }
+        padding: 0 ($offset_one_side + 15px);
+        .main-news {
+            h2 {                
+                padding-bottom: 15px;
+                border-bottom: 1px solid $baseBackgroundColor;
+            }
+        }        
+        @include size(9);  
+        section {
+            padding: 20px 10px;
+            &.news-block {
+                background: $sideBarBackgroundColor;
+            }
+        }      
+    }
+    .right-panel {
+        @include size(3);
+        margin-top: 15px;
+        background-color: $sideBarBackgroundColor;
+    }
+}

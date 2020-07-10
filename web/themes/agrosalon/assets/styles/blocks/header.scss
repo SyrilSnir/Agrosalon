@@ -1,0 +1,38 @@
+header {
+    .container {
+        img {
+           width: 100%;
+        } 
+        font-family: 'micra';
+        color: #fff;
+        .banner-side {
+            text-align: center;
+            text-transform: uppercase;
+ 
+            .description {            
+                font-size: 15px;
+                margin-top: 10px;
+            /* letter-spacing: .1rem;            */
+                border-top: 2px solid $agrosalonDefaultColor;
+                padding-top: 5px;
+            }
+            .date {
+                font-size: 34px;
+                margin: 0;
+                letter-spacing: .2rem;
+            }           
+        }
+        .language-side {
+            margin-top: 2rem;
+            ul {
+                
+                list-style: none;
+                li {
+                   display: inline-block; 
+                   margin: 5px;
+                }
+            }
+        }
+    }
+    
+}

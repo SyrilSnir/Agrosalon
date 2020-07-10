@@ -1,0 +1,40 @@
+footer {   
+    font-family: 'micra'; 
+    background: #000;
+    color: #fff;
+    min-height: 5rem;
+    .footer-row {
+        @include row-flex;
+        .footer-logo {        
+            @include size(2);
+            img {
+                width: 100%;
+            }
+        }
+        .footer-title-wrapper {
+            @include size(7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-transform: uppercase;
+            p {
+                margin: 0;
+                font-size: 20px;
+                font-weight: bold;
+                padding-bottom: 5px;
+            }
+        }
+        .footer-button-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include size(3);
+            .footer-button {
+                background: $agrosalonDefaultColor;
+                padding: 10px 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}

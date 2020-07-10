@@ -1,0 +1,22 @@
+@import "blocks/bootstrap-override.scss";
+@import "../../bootstrap/assets/stylesheets/_bootstrap.scss";
+@import "blocks/font-awesome.min.scss";
+@import "blocks/about.block";
+@import "blocks/smart-grid.scss";
+@import "blocks/variables.scss";
+@import "blocks/fonts.scss";
+@import "blocks/header.scss";
+@import "blocks/footer.scss";
+@import "blocks/menu.scss";
+@import "blocks/node.scss";
+@import "blocks/media-block.scss";
+@import "blocks/inform-panel.scss";
+@import "blocks/base-content.scss";
+@import "blocks/main-content.scss";
+@import "blocks/blocks.scss";
+@import "blocks/main-page.scss";
+@import "blocks/page.scss";
+
+h1, h2 {
+    font-family: micra;
+}

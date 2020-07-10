@@ -1,0 +1,32 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+logo: images/tracktor.jpg
+
+name: Агросалон
+description: Сайт выставки Агросалон
+package: 'Bootstrap'
+
+regions:
+  top: 'Top'
+  primary_menu: 'Primary menu'  
+  banner_side: 'Banner side'
+  logo_side: 'Logo side'
+  right_side: 'Right side'
+  language_block: 'Language block'
+  main_page_blocks: 'Main Page Blocks'
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Header'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries-extend:
+  bootstrap/framework:
+    - agrosalon/framework

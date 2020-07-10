@@ -1,0 +1,34 @@
+.inform-panel {
+    margin-top: -5px;
+    padding: 20px;
+    display: flex;
+    background: $baseBackgroundColor;
+    font-family: 'micra';
+    color: $headerTextColor;
+    justify-content: space-around;
+    border-bottom: 10px solid $agrosalonDefaultColor;
+    .elements {
+        display: flex;
+        align-items: center;
+        .number {
+            font-size: 18px;
+            padding-right: 1em;
+        }
+        .desc {
+            font-size: 12px;
+            max-width: 15em;
+        }
+        &.visitors {
+            flex-grow: 3;
+        }
+        &.countries {
+            flex-grow: 1;
+        }
+        &.companies {
+            flex-grow: 2;
+        }
+        &.square {
+            flex-grow: 3;
+        }
+    }
+}

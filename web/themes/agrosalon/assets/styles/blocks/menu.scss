@@ -1,0 +1,99 @@
+.region-primary-menu {
+    position: relative;
+    z-index: 499;
+    color: $headerTextColor;
+    font-family: 'micra';  
+    .menu--main {
+        list-style: outside none none;
+        display: flex;
+        justify-content: space-between;  
+        background: $agrosalonDefaultColor;
+        background:
+            linear-gradient(45deg, transparent 15px,
+            $agrosalonDefaultColor 0) bottom left;        
+        margin-bottom: 0;
+        width: 100%;
+        > li.first {
+            a {
+                &:hover, &:active,&:focus  {
+                    background: linear-gradient(45deg, transparent 15px,
+                    darken($agrosalonDefaultColor,15) 0) bottom left;                          
+                }
+            }    
+        }
+        li {
+            color: #fff;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: .5s all;
+            cursor: pointer;
+            a {
+                color: #fff;
+                padding: 10px;
+                &:hover, &:active,&:focus  {
+                    background-color: darken($agrosalonDefaultColor,15);
+                }
+            }
+            &.open {
+                > a, > a:hover, > a:focus {
+                    background-color: lighten($agrosalonDefaultColor,15);      
+                }
+                .dropdown-menu {
+                    display: block;
+                    opacity: 1;     
+                }
+            }
+        }
+        .dropdown-menu {
+            background-color: lighten($agrosalonDefaultColor,15);
+            display: block;
+            opacity: 0;
+           -moz-transition:    all 1000ms ease;
+           -webkit-transition: all 1000ms ease;
+           -o-transition:      all 1000ms ease;
+           -ms-transition:     all 1000ms ease;
+           transition:         all 1000ms ease;           
+           li a {
+                transition: all .5s; 
+                &:hover {
+                    background-color: darken($agrosalonDefaultColor,15);
+                }
+            }
+        }
+.dropdown-submenu {
+    position: relative;
+    > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        padding: 0px;
+    }
+    &:hover > .dropdown-menu {
+        display: block;
+    } 
+    > a:after {
+       content: "\e080";
+       display: inline-block;
+       font-family: 'Glyphicons Halflings';
+       font-style: normal;
+       font-size: 10px;
+       padding-left: 10px;
+    }
+}
+
+.navbar-nav li:last-child > .dropdown-menu {
+  left: auto;
+  right: 0px;
+}
+.navbar-nav li:last-child > .dropdown-menu a {
+  text-align: right !important;
+}
+.navbar-nav li:last-child > .dropdown-menu .dropdown-submenu > a:after {
+  float: left;
+  content: "\e079";
+}
+.navbar-nav li:last-child > .dropdown-menu .dropdown-submenu > .dropdown-menu {
+  left: -100%;
+}
+    }
+}

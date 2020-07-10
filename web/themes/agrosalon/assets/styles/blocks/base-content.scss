@@ -1,0 +1,8 @@
+.base-content-wrapper {
+    background: $baseWrapperColor;
+    .base-content {
+        margin: 0 20px;
+        background: $contentBackgroundColor;
+        min-height: 50vh;
+    }
+}

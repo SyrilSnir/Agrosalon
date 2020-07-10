@@ -1,0 +1,8 @@
+              {% block main_page %}
+                  <div class="main-page">
+                  <h1>ГЛАВНАЯ</h1>
+                  {% if page.main_page_blocks %}
+                      {{ page.main_page_blocks }}
+                  {% endif %}
+                  </div>
+              {% endblock %}
