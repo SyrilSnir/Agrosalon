@@ -1,0 +1,10 @@
+core: 8.x
+core_version_requirement: ^8 || ^9
+type: theme
+base theme: stable
+logo: images/logo.gif
+name: Nsod
+description: Сайт промышленного союза "Новое содружество"
+package: Custom
+libraries:
+  - nsod/global_styling

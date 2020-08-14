@@ -1,0 +1,5 @@
+global_styling:
+  version: VERSION
+  css:
+    component:
+      css/style.css: {}

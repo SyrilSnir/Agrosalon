@@ -1,0 +1,6 @@
+name: Agrosalon Base
+type: module
+description: 'Agrosalon base module'
+core: 8.x
+package: Exhibition
+version: 1.0.0

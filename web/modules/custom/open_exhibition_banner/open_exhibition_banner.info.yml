@@ -1,0 +1,8 @@
+name: Open Exhibition Banner Module
+description: Show, how days before open exhibition.
+package: Exhibition
+type: module
+version: 1.0.0
+core: 8.x
+'interface translation project': open_exhibition_banner
+'interface translation server pattern': modules/custom/%project/translations/%language.po

@@ -1,0 +1,11 @@
+article.fotogalereya {
+    .field--items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .field--item {
+            width: 20%;
+            margin-bottom: 20px;
+        }
+    }
+}

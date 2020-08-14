@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Main file for custom hooks and functions
+ */
+ 
+ function open_exhibition_banner_theme($existing, $type, $theme, $path)
+ {
+     return [
+         'base_banner' => [
+             'variables' => [
+                 'days' => 0,
+                 'title' => 'Title'
+             ],
+             'template' => 'open-exhibition-banner',
+             
+         ]
+     ];
+ }
